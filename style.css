@@ -12,7 +12,7 @@
 
 body {
     background-color:var(--color-white);
-    font-size:15px;
+    font-size:1rem;
     font-family:"Poppins",Arial, Helvetica, sans-serif;
     font-weight: 400;
     color: var(--color-grey-500);
@@ -47,7 +47,6 @@ body {
 .description {
     flex-grow:1;
     max-width:34rem;
-    font-size: 1rem;
 }
 
 .flex_boxes {
@@ -79,7 +78,7 @@ body {
     flex-shrink: 0.5;
 }
 
-.section_box h1 {
+.section_box h2 {
     font-size: 1.5rem;
 }
 
