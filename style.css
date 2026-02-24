@@ -1,0 +1,133 @@
+:root {
+    --color-white:hsl(0, 0%, 100%);
+    --color-grey-400:hsl(212, 6%, 44%);
+    --color-grey-500:hsl(234, 12%, 34%);
+    --color-red:hsl(0, 78%, 62%);
+    --color-cyan:hsl(180, 62%, 55%);
+    --color-orange:hsl(34, 97%, 64%);
+    --color-blue: hsl(212,86%,64%);
+}
+
+/* Desktop */
+
+body {
+    background-color:var(--color-white);
+    font-size:15px;
+    font-family:"Poppins",Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: var(--color-grey-500);
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+}
+
+.flex_header {
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+}
+
+.thintitle {
+    font-size: clamp(1rem,4vh,2rem);
+    font-weight:200;
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.boldtitle {
+    font-size:clamp(1rem,4vh,2rem);
+    font-weight:600;
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+.description {
+    flex-grow:1;
+    max-width:34rem;
+    font-size: 1rem;
+}
+
+.flex_boxes {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical_grid {
+    display:flex;
+    flex-direction: column;
+}
+
+.section_box {
+    border-radius: 0.4rem;
+    background-color:var(--color-white);
+    box-shadow: 2px 2px 1em hsl(207, 15%, 86%);
+    display:flex;
+    flex-direction: column;
+    margin:20px;
+    flex-grow:1;
+    flex-basis: 12rem;
+    height:clamp(12rem,18rem - 6vh,18rem);
+    padding:2.5rem;
+    padding-top:1rem;
+    max-width:20rem;
+    min-width:16rem;
+    flex-shrink: 0.5;
+}
+
+.section_box h1 {
+    font-size: 1.5rem;
+}
+
+.section_box p {
+    margin:0;
+}
+
+.section_box img {
+    width:75px;
+    display:block;
+    margin-left:auto;
+    margin-top:auto;
+}
+
+#Supervisor {
+    border-top: solid var(--color-cyan);
+    border-width: 0.3rem;
+}
+
+#Team_builder {
+    border-top: solid var(--color-red);
+    border-width: 0.3rem;
+}
+
+#Karma {
+    border-top: solid var(--color-orange);
+    border-width: 0.3rem;
+}
+
+#Calculator {
+    border-top: solid var(--color-blue);
+    border-width: 0.3rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:57em) {
+    .flex_boxes {
+        flex-wrap: wrap;
+    }
+
+    .thintitle, .boldtitle {
+        font-size:clamp(1rem,2.8vh,2rem);
+    }
+
+    .description {
+        font-size:0.9rem;
+    }
+}
